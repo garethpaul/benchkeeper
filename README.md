@@ -1,8 +1,8 @@
-# Benchkeeper — provisional working name
+# Benchkeeper
 
 A local repair-event planning desk for a volunteer organizer and their browser agent. Protect an appointment, explore a cancellation, inspect the changed plan, and decide what to apply.
 
-**Try it: [benchkeeper.gpj.workers.dev](https://benchkeeper.gpj.workers.dev).** Deployed to the user’s personal Cloudflare account with explicit authorization. The final name remains provisional; the source repository is private, the video has not been published and the entry has not been submitted.
+**Try it: [benchkeeper.gpj.workers.dev](https://benchkeeper.gpj.workers.dev).** Deployed to the user’s personal Cloudflare account with explicit authorization. The source repository is private, the video has not been published and the entry has not been submitted.
 
 Manual planning works in ordinary browsers. Real browser-native WebMCP is verified on the hosted origin in Chrome 152 with WebMCP enabled; it is not generally available in unflagged browsers. See [deployment and live verification](docs/deployment-readiness.md).
 
@@ -186,7 +186,7 @@ The selected two-minute draft records 14 real native calls chosen by a developer
 
 Source is maintained in the private [garethpaul/benchkeeper repository](https://github.com/garethpaul/benchkeeper). It began with a clean source snapshot and fresh Git history; private development records are not included. Private visibility does not fulfill the challenge’s public-repository requirement.
 
-The app is live on the user’s personal Cloudflare account. The [release handoff](docs/deployment-readiness.md) records the exact version, privacy gate and live-origin checks. Local configuration remains loopback-only; the authorized release uses a separate pinned configuration. Source-repository and video publication, final naming, registration and submission remain separate user-controlled steps.
+The app is live on the user’s personal Cloudflare account. The [release handoff](docs/deployment-readiness.md) records the exact version, privacy gate and live-origin checks. Local configuration remains loopback-only; the authorized release uses a separate pinned configuration. Source-repository and video publication, registration and submission remain separate user-controlled steps.
 
 ## Project map
 

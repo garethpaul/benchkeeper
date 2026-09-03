@@ -1,8 +1,8 @@
 # Submission draft — not submitted
 
-## Working name
+## Project name
 
-**Benchkeeper** is a provisional development label. The user must choose or approve the final name; challenge resources advise entrants to name their own project. Do not treat this draft as a registration.
+**Benchkeeper** is the user-approved project name. This draft is not a registration or submission.
 
 ## Elevator pitch
 
@@ -74,7 +74,7 @@ Start with README instructions. Local Vite URL: `http://127.0.0.1:5173/`. Local 
 
 - [ ] **User action:** review age, residence, employment/affiliation/conflict, project ownership and funding restrictions in the [official rules](https://webmcp.devpost.com/rules). We do not know or attest eligibility.
 - [ ] **User action:** open the [challenge](https://webmcp.devpost.com/), choose **Join hackathon**, then sign into an existing Devpost account or create one. Read and accept terms yourself. **This work did not register you.** Your existing account or registration status is unknown; check it before creating a duplicate.
-- [ ] **User action:** select the final project name. Do not submit the provisional label automatically.
+- [x] **User approved:** Benchkeeper is the project name.
 - [x] Provide an authorized hosted access path. Local SSH forwarding remains blocked and was not changed.
 - [x] Complete local acceptance and record achieved rubric evidence and gaps. User review of the final submission remains outstanding.
 - [x] **Authorized and completed:** deploy to the personal Cloudflare account and verify the real hosted URL, manual flows and native WebMCP in enabled Chrome. No origin-trial enrollment was performed; unflagged Chrome remains manual.

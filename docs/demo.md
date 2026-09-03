@@ -81,6 +81,6 @@ A separate ignored Kokoro/ONNX narration pilot was tested locally with a preset 
 
 ## Review before publishing
 
-Listen to the complete narration and decide whether to use the entrant's voice. Check the actual target player's controls and captions; only the described local browser configurations have been tested. Approve the final name and re-record if the visible product or claims change.
+Listen to the complete narration and decide whether to use the entrant's voice. Check the actual target player's controls and captions; only the described local browser configurations have been tested. The user has approved Benchkeeper as the name. The existing local recording predates removal of the pending-name label; refresh that footage before publishing it as the current UI.
 
 Only after explicit authorization, upload the selected video to YouTube and use its real public URL in Devpost. For the clean master, upload the SRT separately; avoid duplicate captions on the burned-caption copy. Keep the video shorter than three minutes. Nothing here uploads or submits anything. [Official requirements](https://webmcp.devpost.com/rules)

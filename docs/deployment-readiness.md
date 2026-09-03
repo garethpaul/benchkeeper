@@ -1,8 +1,8 @@
 # Cloudflare deployment and release handoff
 
-**Live: [benchkeeper.gpj.workers.dev](https://benchkeeper.gpj.workers.dev).** The user explicitly authorized this deployment to their personal Cloudflare account. Hosting is complete and the source repository is private. Public repository/video publication, final naming, registration and submission remain separate user-controlled steps.
+**Live: [benchkeeper.gpj.workers.dev](https://benchkeeper.gpj.workers.dev).** The user explicitly authorized this deployment to their personal Cloudflare account. Hosting is complete and the source repository is private. Public repository/video publication, registration and submission remain separate user-controlled steps.
 
-## Deployed release
+## Initial deployed release
 
 - Worker: `benchkeeper`; version `046fd511-6f58-43ec-9053-7e3e7991eda3`.
 - Deployed September 3, 2026, approximately 17:17 UTC. Live acceptance passed at 17:19 UTC.
@@ -37,7 +37,7 @@ An initial Python health request returned HTTP 403 immediately after deployment.
 
 The hosted URL provides access without SSH forwarding. The prior client forwarding restriction remains unchanged: the SSH server rejects forwarded channels and client port 8787 belongs to an unrelated service. No network or administrator controls were altered.
 
-Benchkeeper remains a provisional visible name. The user subsequently authorized the private [source repository](https://github.com/garethpaul/benchkeeper), starting from a sanitized snapshot with fresh history. Neither authorization approves a final contest name, public source visibility, a public video or a Devpost submission. The [submission checklist](submission.md#registration-and-publishing-checklist) records these remaining steps and the deadline.
+The user has approved Benchkeeper as the project name. The user subsequently authorized the private [source repository](https://github.com/garethpaul/benchkeeper), starting from a sanitized snapshot with fresh history. This naming approval does not authorize public source visibility, a public video or a Devpost submission. The [submission checklist](submission.md#registration-and-publishing-checklist) records these remaining steps and the deadline.
 
 To enable native tools in a supported local Chrome build, follow the browser guidance in [README](../README.md). Any later origin-trial enrollment must use the actual origin and satisfy its enrollment requirements; no token has been invented or added. [Chrome origin trial](https://developer.chrome.com/blog/ai-webmcp-origin-trial)
 
@@ -49,6 +49,12 @@ Keep `assets.run_worker_first: true`: the Worker supplies the response security 
 
 Before any future publication, rebuild and rerun the private privacy gate on the exact artifacts. For repository publication, use the allowlisted source exporter, audit the new archive, and create a clean repository only after authorization. Do not publish the original development Git history. Source exports remain local and do not include the private release configuration.
 
-The first deployment has no earlier version to roll back to. Preserve this known-good version and its asset manifest. Any later rollback, replacement or disabling of the public route must stay within the user’s authorization; do not affect unrelated resources. [Wrangler Worker commands](https://developers.cloudflare.com/workers/wrangler/commands/workers/) · [workers.dev routing](https://developers.cloudflare.com/workers/configuration/routing/workers-dev/)
+The current naming update can be rolled back to the initial version listed above. Preserve both known-good versions and their asset manifests. Any later rollback, replacement or disabling of the public route must stay within the user’s authorization; do not affect unrelated resources. [Wrangler Worker commands](https://developers.cloudflare.com/workers/wrangler/commands/workers/) · [workers.dev routing](https://developers.cloudflare.com/workers/configuration/routing/workers-dev/)
 
 Keep the submitted hosted build, source revision and video aligned through judging. Hosting alone does not register or submit the entry.
+
+## Approved-name update
+
+The user approved Benchkeeper. The pending-name sidebar label and its unused styles were removed; current naming docs and the submission checklist now record that approval. Cloudflare version `a019d79f-494c-4366-af9a-25129307910e` serves this update.
+
+Build, 110 unit tests, 70 Chrome cases, local runtime and dry-run checks passed. The actual hosted label check changed from one pending-name label before the update to zero afterward. The hosted manual and native-enabled Chrome journeys, six HTTP/header cases and all 21 asset hashes passed again; all ten native tools remain registered. No scheduling, storage or approval behavior changed. Source remains private, and its complete clean Git history is scanned before each push. Existing local demo footage predates this label-only change.

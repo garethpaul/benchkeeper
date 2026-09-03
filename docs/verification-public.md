@@ -165,3 +165,7 @@ The main suite uses explicit command-line switches. A separate Chrome 152 check 
 ### Recovery accessibility and semantic checks
 
 The new conflict controls passed automated axe checks at 320px and 1440px after real page animations and fonts settled. Keyboard Tab/Enter reached reload and preserved the newer save. A separate CDP accessibility-tree audit checked seven workflow states, complete long appointment labels, modal background isolation and approval/focus states. These are browser semantics and automated checks, not a screen-reader session or an assistive-technology user study.
+
+### Approved project name
+
+After the user approved Benchkeeper, the pending-name sidebar label and its unused styles were removed. The naming-only update passed a fresh build, 110 unit tests and 70 Chrome cases, plus runtime and dry-run checks. Live verification confirmed zero pending-name labels, all 21 served asset hashes, manual and real native-enabled browser flows, and all ten registered tools. Current version and release details are in the [deployment handoff](deployment-readiness.md). Earlier recorded screenshots and footage predate this text-only change.

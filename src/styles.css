@@ -281,11 +281,6 @@ button {
   margin-top: 5px;
   color: #526447;
 }
-.provisional {
-  font-size: 9px;
-  color: #526447;
-  margin: 14px 0 0;
-}
 .main-shell {
   margin-left: 246px;
   flex: 1;
@@ -1993,8 +1988,7 @@ dialog > p {
   .brand > span:last-child,
   .sidebar-event,
   .sidebar-note,
-  .local-state,
-  .provisional {
+  .local-state {
     display: none;
   }
   .brand {

@@ -228,7 +228,6 @@ export default function App() {
             </small>
           </div>
         </div>
-        <p className="provisional">Working name · pending your approval</p>
       </aside>
       <div className="main-shell">
         <header className="topbar">

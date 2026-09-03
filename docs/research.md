@@ -1,6 +1,6 @@
 # Research and selection
 
-Research pass: 2026-09-03, beginning 04:22 UTC. New independent project. Working name **Benchkeeper**, provisional until the user chooses a name. No claim that an AI-generated name meets the challenge's naming advice.
+Research pass: 2026-09-03, beginning 04:22 UTC. New independent project. The user subsequently approved **Benchkeeper** as the project name.
 
 ## Competition facts
 
@@ -113,7 +113,7 @@ A second pass checked concrete organizer workflows, not just the general need fo
 
 [RepairManager](https://landing.repairmanager.co.uk/) already advertises pre-registration, allocation/repair/testing stages, audit trails and live displays. [Circularity's event guide](https://github.com/Zesty0wl/circularity-repair-cafe-hub/blob/main/docs/05-running-an-event.md) and [repairer guide](https://github.com/Zesty0wl/circularity-repair-cafe-hub/blob/main/docs/repairer-guide.md) cover check-in, a shared live queue, accepting work and recording outcomes. These are broader operational systems; Benchkeeper should not claim those capabilities or imply they lack unadvertised planning features.
 
-The adjacent commercial product [BenchKey advertises appointments](https://benchkey.com/features/appointments) and an [AI setup assistant](https://benchkey.com/features/ai-assistant). That further weakens any generic “AI for repair scheduling” novelty claim. The demonstrated distinction must remain the shared disruption comparison, source-bound review and exact local displacement explanation. The similar name is also a reason to keep **Benchkeeper provisional**; no name-availability or trademark-clearance claim is made.
+The adjacent commercial product [BenchKey advertises appointments](https://benchkey.com/features/appointments) and an [AI setup assistant](https://benchkey.com/features/ai-assistant). That further weakens any generic “AI for repair scheduling” novelty claim. The demonstrated distinction must remain the shared disruption comparison, source-bound review and exact local displacement explanation. The user has approved the name **Benchkeeper**. The adjacent name remains a research observation, not a name-availability or trademark-clearance claim.
 
 No source here establishes that organizers want another separate app, will prepare the required columns, or can use the 24-request ceiling. The internal 90-point estimate remains uncertain and unchanged; additional citations do not earn points. No booking, account login, contact, survey response or external-system mutation was performed.
 
