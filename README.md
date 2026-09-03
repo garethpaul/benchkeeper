@@ -8,7 +8,11 @@ Manual planning works in ordinary browsers. Real browser-native WebMCP is verifi
 
 ![Planning desk with four repairers, nine appointments and a protected lamp booking.](docs/images/planning-desk.webp)
 
-_Viewport excerpt from the running local app, using synthetic example data._
+_Viewport excerpt from the live app, using synthetic example data._
+
+## Visual design
+
+A workshop-ledger treatment pairs deep ink navigation and warm paper with cobalt controls and an orange session ticket. Ruled statistics, appointment edge markers and stronger typography distinguish the committed schedule from a proposed change. Fonts stay self-hosted, and the design retains narrow-screen layouts, keyboard focus, forced-color support and reduced-motion behavior.
 
 ## Run locally
 

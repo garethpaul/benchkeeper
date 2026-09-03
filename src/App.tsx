@@ -171,7 +171,7 @@ export default function App() {
           <span className="event-dot" />
           <span>
             {state.event.name}
-            <small>Local planning session · {sessionWindow}</small>
+            <small>Session · {sessionWindow}</small>
           </span>
         </div>
         <nav aria-label="Main navigation">

@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-09-03T17:44:07.280Z",
+  "createdAt": "2026-09-03T17:55:51.965Z",
   "published": false,
   "exclusions": [
     "Git history",
@@ -29,8 +29,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 22476,
-      "sha256": "c20691dddb5b6bf643e6bb6c5cca657a068dfdc1249d3bdece68f2667261b1aa",
+      "bytes": 22868,
+      "sha256": "7aef0da2ab3d5eb409bcbb797867681d3d5580cde74949ebb18298f4840c35de",
       "changedForExport": true
     },
     {
@@ -59,14 +59,14 @@
     },
     {
       "file": "docs/demo.md",
-      "bytes": 14818,
-      "sha256": "dbb17c51b90c0396242a3980e022a7ec296b59390abde2b538439b475c6ec816",
+      "bytes": 14837,
+      "sha256": "7eb6ff4fde88456fd733b93b05214b2647046e62c5089cf697e8f72da29cf18f",
       "changedForExport": true
     },
     {
       "file": "docs/deployment-readiness.md",
-      "bytes": 7981,
-      "sha256": "fd8bfb592943d0cbd9f0cbd691fd4982a68bea53e463d0370325de6360c19031",
+      "bytes": 9378,
+      "sha256": "7f6cf808609383b550b3390c452fe7d773c51d981dc909b6c00f570cd04c0029",
       "changedForExport": false
     },
     {
@@ -77,14 +77,14 @@
     },
     {
       "file": "docs/images/planning-desk.webp",
-      "bytes": 103990,
-      "sha256": "4cabfe5101f1c1f74efc1a351b612cea58a701ad3b4cfb6c6c4c9358e213ceea",
+      "bytes": 104498,
+      "sha256": "70811afe333307b481b4cf50598bdc2afb18347b167e501efe982afd9290a1ca",
       "changedForExport": false
     },
     {
       "file": "docs/images/proposal-review.webp",
-      "bytes": 34760,
-      "sha256": "1ec2c520203a9ebdb8ce14a3bdba31251fb09ef654861ab86da12a8d7cdfc358",
+      "bytes": 33688,
+      "sha256": "6717e41eed06c83785986beefed6d747a35a27ffb28a306b0e6b96bd4a7351f2",
       "changedForExport": false
     },
     {
@@ -114,7 +114,7 @@
     {
       "file": "index.html",
       "bytes": 606,
-      "sha256": "ec932bab947b5cf3350eb6173470f5da51ae8191f75af34240cd2ac901055a80",
+      "sha256": "36a34a5e7d8252300f339af50db09b09c0c14e4af4eed6e06d0ac0acc19dd32f",
       "changedForExport": false
     },
     {
@@ -149,8 +149,8 @@
     },
     {
       "file": "public/favicon.svg",
-      "bytes": 355,
-      "sha256": "72f6b21776112f1f62ca2e9f9396dbeeafc8d2c12e95f091b1b022879a4b5ae3",
+      "bytes": 354,
+      "sha256": "a656a19fdcc65984f8199d42ac0114b78c1b61b27587b189081448ce8cce7303",
       "changedForExport": false
     },
     {
@@ -299,8 +299,8 @@
     },
     {
       "file": "src/App.tsx",
-      "bytes": 38888,
-      "sha256": "68e00243d8d680ad73b49f13be7396c82543e144aa97eb2ca76be1d51cc4cbe2",
+      "bytes": 38873,
+      "sha256": "eb0a6907a03743c7c11c8b86118bf40d301266ce4287b1953b5e77bbd8243c67",
       "changedForExport": false
     },
     {
@@ -348,7 +348,7 @@
     {
       "file": "src/ToolLab.tsx",
       "bytes": 5619,
-      "sha256": "19f92693a65d284a3be7c489b44cac9a485f034a2162b2e92ff3ceb6007bf321",
+      "sha256": "561f3e41472a1fd16daf478acae384a2ff76288bbb3c72965702d7dde379440d",
       "changedForExport": false
     },
     {
@@ -401,8 +401,8 @@
     },
     {
       "file": "src/styles.css",
-      "bytes": 52388,
-      "sha256": "a27b0eaa4749010df04cd93f9f6266404a3bff3d4b38dffedc295006e80968e7",
+      "bytes": 53571,
+      "sha256": "cca7ad45c540c6dabbcff96a0dce36e104398a514c41a3f7b13ab9298a0a2dce",
       "changedForExport": false
     },
     {
@@ -431,8 +431,8 @@
     },
     {
       "file": "tests/e2e/desk.spec.ts",
-      "bytes": 101693,
-      "sha256": "e1e3b20eb06470248c64ebe4d450f8c09cf08df7127ce94dfc4869b5e1bc4b93",
+      "bytes": 101811,
+      "sha256": "d865b79b683c40530afdc976830e1e7d64c68bc8d0a115b11ce141ce5035a305",
       "changedForExport": false
     },
     {
@@ -569,14 +569,14 @@
     },
     {
       "file": "docs/verification.md",
-      "bytes": 30541,
-      "sha256": "9763160e8442b305707ec30384e37aedf953fa92b55e3ddb7e24053ee7daf07a",
+      "bytes": 31343,
+      "sha256": "5d1490e86dcd92a0b1fb945342e558a80318cb7636056214411b69789d60924c",
       "changedForExport": false
     },
     {
       "file": "docs/verification-public.md",
-      "bytes": 30541,
-      "sha256": "9763160e8442b305707ec30384e37aedf953fa92b55e3ddb7e24053ee7daf07a",
+      "bytes": 31343,
+      "sha256": "5d1490e86dcd92a0b1fb945342e558a80318cb7636056214411b69789d60924c",
       "changedForExport": false
     }
   ]

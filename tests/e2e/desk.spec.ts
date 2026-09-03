@@ -1839,6 +1839,9 @@ test('proposal, roster, tool panel and editing dialogs pass automated accessibil
   await audit('repairer dialog');
   await page.getByRole('button', { name: 'Cancel', exact: true }).click();
   await page.getByRole('button', { name: 'Agent tools', exact: true }).click();
+  await expect(
+    page.getByRole('heading', { name: 'Agent tools, out in the open.', level: 1 })
+  ).toBeVisible();
   await audit('tool panel');
   await page.getByRole('button', { name: 'Repair requests', exact: false }).click();
   await page.getByRole('button', { name: 'Open Wooden toy', exact: true }).click();

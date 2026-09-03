@@ -47,13 +47,13 @@ export function ToolLab({ status }: { status: WebMCPStatus }) {
       <div className="section-heading">
         <div>
           <p className="eyebrow">SAME DESK. TWO WAYS TO WORK.</p>
-          <h2>Agent tools, out in the open.</h2>
+          <h1>Agent tools, out in the open.</h1>
         </div>
         <Code2 size={25} />
       </div>
       <div className="agent-intro">
         <div>
-          <h3>Your browser agent is the collaborator.</h3>
+          <h2>Your browser agent is the collaborator.</h2>
           <p>
             This app does not contain a chatbot or call a model API. In a compatible browser, your
             agent can inspect the queue, compare plans and bring one back for your review.
@@ -65,7 +65,7 @@ export function ToolLab({ status }: { status: WebMCPStatus }) {
         </div>
         <div className="boundary-card">
           <ShieldCheck size={24} />
-          <h3>You keep the final say.</h3>
+          <h2>You keep the final say.</h2>
           <p>
             No approval, promise-release, contact, payment or deployment tool is exposed. Tool
             descriptions are guidance, not a security barrier against software with full page
@@ -80,7 +80,7 @@ export function ToolLab({ status }: { status: WebMCPStatus }) {
       <div className="panel rehearsal-panel">
         <div>
           <p className="eyebrow">REPEATABLE DEMO · NO LLM</p>
-          <h3>Rehearse the cancellation</h3>
+          <h2>Rehearse the cancellation</h2>
           <p>
             A fixed script reads the event, previews Sam’s absence, and opens a review. It is{' '}
             <strong>not an autonomous-agent evaluation</strong>.
@@ -121,7 +121,7 @@ export function ToolLab({ status }: { status: WebMCPStatus }) {
         ))}
       </div>
       <div className="tool-catalog">
-        <h3>{toolCatalog.length} structured tools</h3>
+        <h2>{toolCatalog.length} structured tools</h2>
         {toolCatalog.map((t) => (
           <details key={t.name}>
             <summary>

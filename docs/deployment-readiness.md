@@ -58,3 +58,11 @@ Keep the submitted hosted build, source revision and video aligned through judgi
 The user approved Benchkeeper. The pending-name sidebar label and its unused styles were removed; current naming docs and the submission checklist now record that approval. Cloudflare version `a019d79f-494c-4366-af9a-25129307910e` serves this update.
 
 Build, 110 unit tests, 70 Chrome cases, local runtime and dry-run checks passed. The actual hosted label check changed from one pending-name label before the update to zero afterward. The hosted manual and native-enabled Chrome journeys, six HTTP/header cases and all 21 asset hashes passed again; all ten native tools remain registered. No scheduling, storage or approval behavior changed. Source remains private, and its complete clean Git history is scanned before each push. Existing local demo footage predates this label-only change.
+
+## Workshop-ledger visual refresh
+
+Cloudflare version `70ce3422-a1d3-4f8a-901f-fdcc547be555` serves the refreshed design: ink navigation, warm paper, cobalt controls, an orange session ticket, ruled statistics and clearer schedule boundaries. Existing self-hosted typefaces and dependencies are unchanged. The Agent tools page now has a proper top-level heading and ordered section headings. Scheduling, storage and native tool handlers are unchanged.
+
+The frozen local run passed 110 unit tests, 70 Chrome cases, 18 Firefox cases and 18 Linux WebKit cases, plus runtime, asset-identity and dry-run checks. All seven inspected live visual states passed automated accessibility checks, including narrow 320/390-pixel layouts, proposals, approval, roster and tools. The first live asset request briefly returned the prior favicon; a subsequent ordinary request returned the new bytes. No cache or infrastructure setting was changed. Repository screenshots now show the hosted design. The local demo movie is still the earlier design and must be refreshed before publication.
+
+The completed live acceptance run also passed six HTTP/security-header cases, exact hashes for all 21 assets, ordinary manual mode and real native-enabled Chrome read/preview/review/apply/reload/backup/reset flows. All ten tools are registered. No origin-trial token or polyfill was added. The repository remains private.
