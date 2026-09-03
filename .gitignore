@@ -1,0 +1,14 @@
+work/
+node_modules/
+dist/
+.wrangler/
+work/browser-profile/
+work/test-results/
+work/npm-cache/
+work/worker-bundle/
+work/wrangler-home/
+playwright-report/
+test-results/
+*.tsbuildinfo
+.env*
+!.env.example

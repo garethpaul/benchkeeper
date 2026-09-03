@@ -1,0 +1,381 @@
+{
+  "event": {
+    "schemaVersion": 1,
+    "name": "Fresh-instance workshop A \u2014 synthetic",
+    "startMinutes": 645,
+    "volunteers": [
+      {
+        "id": "person-phlhai",
+        "name": "Rowan",
+        "available": true,
+        "blocks": [],
+        "skills": [
+          "electrical",
+          "general"
+        ],
+        "start": 0,
+        "end": 8
+      },
+      {
+        "id": "person-etfxme",
+        "name": "Remy",
+        "available": true,
+        "blocks": [],
+        "skills": [
+          "electrical"
+        ],
+        "start": 0,
+        "end": 12
+      },
+      {
+        "id": "person-1cqrwa",
+        "name": "Ari",
+        "available": true,
+        "blocks": [
+          {
+            "id": "break",
+            "label": "Repairer break",
+            "kind": "break",
+            "start": 4,
+            "duration": 1
+          }
+        ],
+        "skills": [
+          "textiles"
+        ],
+        "start": 0,
+        "end": 10
+      },
+      {
+        "id": "person-i9u5g1",
+        "name": "Toby",
+        "available": true,
+        "blocks": [],
+        "skills": [
+          "bicycle"
+        ],
+        "start": 0,
+        "end": 12
+      },
+      {
+        "id": "person-hxgijc",
+        "name": "Harper",
+        "available": true,
+        "blocks": [
+          {
+            "id": "walk-in",
+            "label": "Walk-in reserve",
+            "kind": "walk-in",
+            "start": 9,
+            "duration": 3
+          }
+        ],
+        "skills": [
+          "general",
+          "textiles"
+        ],
+        "start": 2,
+        "end": 12
+      },
+      {
+        "id": "person-1ct8999",
+        "name": "Devon",
+        "available": true,
+        "blocks": [],
+        "skills": [
+          "general"
+        ],
+        "start": 0,
+        "end": 12
+      }
+    ],
+    "requests": [
+      {
+        "id": "item-ix38i4",
+        "title": "Audio amplifier",
+        "skill": "electrical",
+        "duration": 2,
+        "arrival": 2,
+        "leaveBy": 8,
+        "partsReady": true,
+        "visitor": "Guest 3",
+        "note": ""
+      },
+      {
+        "id": "item-1x9u8wc",
+        "title": "Wooden toy",
+        "skill": "general",
+        "duration": 1,
+        "arrival": 0,
+        "leaveBy": 12,
+        "partsReady": true,
+        "visitor": "Guest 7",
+        "note": ""
+      },
+      {
+        "id": "item-182exsa",
+        "title": "Jeans pocket",
+        "skill": "textiles",
+        "duration": 2,
+        "arrival": 5,
+        "leaveBy": 10,
+        "partsReady": true,
+        "visitor": "Guest 12",
+        "note": ""
+      },
+      {
+        "id": "item-67zajl",
+        "title": "Canvas bag",
+        "skill": "textiles",
+        "duration": 2,
+        "arrival": 2,
+        "leaveBy": 9,
+        "partsReady": true,
+        "visitor": "Guest 8",
+        "note": ""
+      },
+      {
+        "id": "item-kj2mfq",
+        "title": "Kitchen stool",
+        "skill": "general",
+        "duration": 2,
+        "arrival": 0,
+        "leaveBy": 12,
+        "partsReady": true,
+        "visitor": "Guest 10",
+        "note": ""
+      },
+      {
+        "id": "item-cd1o3p",
+        "title": "Table fan",
+        "skill": "electrical",
+        "duration": 2,
+        "arrival": 4,
+        "leaveBy": 12,
+        "partsReady": true,
+        "visitor": "Guest 9",
+        "note": ""
+      },
+      {
+        "id": "item-glaezg",
+        "title": "Kitchen radio",
+        "skill": "electrical",
+        "duration": 2,
+        "arrival": 0,
+        "leaveBy": 6,
+        "partsReady": true,
+        "visitor": "Guest 2",
+        "note": ""
+      },
+      {
+        "id": "item-jhl3a1",
+        "title": "Wall clock",
+        "skill": "electrical",
+        "duration": 1,
+        "arrival": 0,
+        "leaveBy": 8,
+        "partsReady": true,
+        "visitor": "Guest 11",
+        "note": ""
+      },
+      {
+        "id": "item-sxbn87",
+        "title": "Coffee scale",
+        "skill": "electrical",
+        "duration": 2,
+        "arrival": 0,
+        "leaveBy": 8,
+        "partsReady": false,
+        "visitor": "Guest 4",
+        "note": ""
+      },
+      {
+        "id": "item-68qy7r",
+        "title": "Jacket zipper",
+        "skill": "textiles",
+        "duration": 2,
+        "arrival": 0,
+        "leaveBy": 10,
+        "partsReady": true,
+        "visitor": "Guest 6",
+        "note": ""
+      },
+      {
+        "id": "item-yyjvbx",
+        "title": "Town bicycle",
+        "skill": "bicycle",
+        "duration": 3,
+        "arrival": 0,
+        "leaveBy": 12,
+        "partsReady": true,
+        "visitor": "Guest 5",
+        "note": ""
+      },
+      {
+        "id": "item-18bsnwt",
+        "title": "Blue kettle",
+        "skill": "electrical",
+        "duration": 2,
+        "arrival": 0,
+        "leaveBy": 4,
+        "partsReady": true,
+        "visitor": "Guest 1",
+        "note": "A promised assessment slot; not a guaranteed repair."
+      }
+    ],
+    "assignments": [
+      {
+        "requestId": "item-kj2mfq",
+        "volunteerId": "person-1ct8999",
+        "start": 2,
+        "duration": 2,
+        "locked": false
+      },
+      {
+        "requestId": "item-yyjvbx",
+        "volunteerId": "person-i9u5g1",
+        "start": 0,
+        "duration": 3,
+        "locked": false
+      },
+      {
+        "requestId": "item-ix38i4",
+        "volunteerId": "person-etfxme",
+        "start": 2,
+        "duration": 2,
+        "locked": false
+      },
+      {
+        "requestId": "item-182exsa",
+        "volunteerId": "person-1cqrwa",
+        "start": 5,
+        "duration": 2,
+        "locked": false
+      },
+      {
+        "requestId": "item-67zajl",
+        "volunteerId": "person-hxgijc",
+        "start": 2,
+        "duration": 2,
+        "locked": false
+      },
+      {
+        "requestId": "item-1x9u8wc",
+        "volunteerId": "person-1ct8999",
+        "start": 0,
+        "duration": 1,
+        "locked": false
+      },
+      {
+        "requestId": "item-glaezg",
+        "volunteerId": "person-etfxme",
+        "start": 0,
+        "duration": 2,
+        "locked": false
+      },
+      {
+        "requestId": "item-68qy7r",
+        "volunteerId": "person-1cqrwa",
+        "start": 0,
+        "duration": 2,
+        "locked": false
+      },
+      {
+        "requestId": "item-18bsnwt",
+        "volunteerId": "person-phlhai",
+        "start": 0,
+        "duration": 2,
+        "locked": true
+      }
+    ]
+  },
+  "scenario": {
+    "objective": "most-appointments",
+    "absentVolunteerId": "person-etfxme",
+    "extraSlots": 0,
+    "readyRequestId": null,
+    "priorityRequestId": null
+  },
+  "sameCountBookingPreservingWitness": [
+    {
+      "requestId": "item-68qy7r",
+      "volunteerId": "person-1cqrwa",
+      "start": 0,
+      "duration": 2,
+      "locked": false
+    },
+    {
+      "requestId": "item-1x9u8wc",
+      "volunteerId": "person-1ct8999",
+      "start": 0,
+      "duration": 1,
+      "locked": false
+    },
+    {
+      "requestId": "item-yyjvbx",
+      "volunteerId": "person-i9u5g1",
+      "start": 0,
+      "duration": 3,
+      "locked": false
+    },
+    {
+      "requestId": "item-18bsnwt",
+      "volunteerId": "person-phlhai",
+      "start": 0,
+      "duration": 2,
+      "locked": true
+    },
+    {
+      "requestId": "item-kj2mfq",
+      "volunteerId": "person-1ct8999",
+      "start": 2,
+      "duration": 2,
+      "locked": false
+    },
+    {
+      "requestId": "item-67zajl",
+      "volunteerId": "person-hxgijc",
+      "start": 2,
+      "duration": 2,
+      "locked": false
+    },
+    {
+      "requestId": "item-glaezg",
+      "volunteerId": "person-phlhai",
+      "start": 2,
+      "duration": 2,
+      "locked": false
+    },
+    {
+      "requestId": "item-ix38i4",
+      "volunteerId": "person-phlhai",
+      "start": 4,
+      "duration": 2,
+      "locked": false
+    },
+    {
+      "requestId": "item-182exsa",
+      "volunteerId": "person-1cqrwa",
+      "start": 5,
+      "duration": 2,
+      "locked": false
+    },
+    {
+      "requestId": "item-cd1o3p",
+      "volunteerId": "person-phlhai",
+      "start": 6,
+      "duration": 2,
+      "locked": false
+    }
+  ],
+  "observedBefore": {
+    "scheduled": 10,
+    "retained": 6,
+    "moved": 2,
+    "newlyScheduled": 2,
+    "noLongerScheduled": 1,
+    "protected": 1,
+    "volunteerMinutes": 285
+  },
+  "provenance": "Synthetic developer-agent trial, September 3 08:40 UTC. Same-count feasible witness retains all nine bookings. This is not real organizer data or a global optimum proof."
+}

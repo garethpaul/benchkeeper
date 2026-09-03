@@ -1,0 +1,54 @@
+# Cloudflare deployment and release handoff
+
+**Live: [benchkeeper.gpj.workers.dev](https://benchkeeper.gpj.workers.dev).** The user explicitly authorized this deployment to their personal Cloudflare account. Hosting is complete and the source repository is private. Public repository/video publication, final naming, registration and submission remain separate user-controlled steps.
+
+## Deployed release
+
+- Worker: `benchkeeper`; version `046fd511-6f58-43ec-9053-7e3e7991eda3`.
+- Deployed September 3, 2026, approximately 17:17 UTC. Live acceptance passed at 17:19 UTC.
+- Used the existing `cloudflare-personal` dotfiles wrapper. It selects the isolated personal OAuth store and clears ambient credential overrides. Account inspection returned one personal account; the release configuration pins it. The target Worker did not exist before deployment, so no existing app was overwritten.
+- The release contains the verified static assets and a small Worker. No database, secret binding, model API, custom domain, DNS change, migration, cron job or tunnel was created. Event data remains in each visitor’s browser tab; local events were not transferred.
+- The release copy explicitly enables `workers_dev`, disables preview URLs and source-map upload, and preserves Worker-first asset routing, the compatibility date and the security headers. The checked-in configuration remains local-only.
+- Only built assets and the Worker were uploaded. Private work, credentials, internal notes, development Git history, source archives and recordings were excluded. A private release gate found no confidential model identifier in the exact deployment files; all 21 assets matched the frozen local build.
+
+The initial check of default Wrangler authentication missed the already configured personal wrapper. A redundant device login was cancelled before using the existing personal session. No new login or copied credentials were needed.
+
+## Verification performed on the actual HTTPS origin
+
+The full local preflight immediately before deployment passed build, 110 unit tests, 70 Chrome tests, 18 Firefox tests, 18 Linux WebKit tests, five runtime cases and the dry-run bundle. There were no skips, flaky retries or unexpected failures. All 21 served assets matched; source stability and temporary-server cleanup passed.
+
+A separate live checker kept the ordinary local test commands restricted to loopback. It verified:
+
+| Check | Observed result |
+| --- | --- |
+| HTTP and headers | Six cases passed: app, health, unknown API, rejected POST, blocked work path and blocked Git path. CSP/framing denial, same-origin tools policy, no-referrer and nosniff verified. |
+| Asset identity | All 21 live files match the pre-upload SHA-256 manifest. |
+| Ordinary Chrome 152.0.7977.75 | No WebMCP flags or native API. Manual cancellation preview, human approval, backup, reload, print preview and reset passed at 320 px. |
+| Native-enabled Chrome 152.0.7977.75 | Real `document.modelContext`, ten registered tools and actual native read/preview/change-inspection/review calls. No mock or polyfill. |
+| Shared state and approval | Previews left revision zero unchanged. A fresh proposal reached the UI; Apply stayed disabled until the organizer checkbox was checked. Final revision one had nine appointments, Sam unavailable, the protected lamp unchanged and the fan assigned to Ada. |
+| Recovery | Downloaded backup matched the approved state; reload retained it; reset restored the example. |
+| Accessibility and requests | Zero axe violations in the checked desktop/mobile states, no page errors and no unexpected external app requests. Desktop and narrow screenshots were inspected. |
+
+Native verification explicitly enabled `--enable-blink-features=WebMCP` and `--enable-features=WebMCPTesting`. It does **not** establish unflagged browser support or origin-trial enrollment. The ordinary-browser fallback was tested separately, without suppressing the API artificially. Browser automation ran without the OS sandbox in the test environment; that is not an end-user recommendation. This live check is a scripted acceptance journey, not an independent-agent or organizer study.
+
+An initial Python health request returned HTTP 403 immediately after deployment. Subsequent curl, Node and actual-browser checks succeeded; the first response’s cause was not established. The completed six-case suite and asset checks passed without an access login.
+
+## Access and remaining decisions
+
+The hosted URL provides access without SSH forwarding. The prior client forwarding restriction remains unchanged: the SSH server rejects forwarded channels and client port 8787 belongs to an unrelated service. No network or administrator controls were altered.
+
+Benchkeeper remains a provisional visible name. The user subsequently authorized the private [source repository](https://github.com/garethpaul/benchkeeper), starting from a sanitized snapshot with fresh history. Neither authorization approves a final contest name, public source visibility, a public video or a Devpost submission. The [submission checklist](submission.md#registration-and-publishing-checklist) records these remaining steps and the deadline.
+
+To enable native tools in a supported local Chrome build, follow the browser guidance in [README](../README.md). Any later origin-trial enrollment must use the actual origin and satisfy its enrollment requirements; no token has been invented or added. [Chrome origin trial](https://developer.chrome.com/blog/ai-webmcp-origin-trial)
+
+## Future updates and recovery
+
+Use `cloudflare-personal`, not bare Wrangler or a work-profile credential, for authorized changes to this app. Verify the selected account and current target version before another mutation. Do not run a scaffold or allow automatic configuration to choose another destination. The isolated release was dry-run checked before an actual `deploy --strict --no-autoconfig`.
+
+Keep `assets.run_worker_first: true`: the Worker supplies the response security headers. Uploading only `dist` to a different hosting product would not reproduce them automatically. Account IDs and credentials do not belong in public source.
+
+Before any future publication, rebuild and rerun the private privacy gate on the exact artifacts. For repository publication, use the allowlisted source exporter, audit the new archive, and create a clean repository only after authorization. Do not publish the original development Git history. Source exports remain local and do not include the private release configuration.
+
+The first deployment has no earlier version to roll back to. Preserve this known-good version and its asset manifest. Any later rollback, replacement or disabling of the public route must stay within the user’s authorization; do not affect unrelated resources. [Wrangler Worker commands](https://developers.cloudflare.com/workers/wrangler/commands/workers/) · [workers.dev routing](https://developers.cloudflare.com/workers/configuration/routing/workers-dev/)
+
+Keep the submitted hosted build, source revision and video aligned through judging. Hosting alone does not register or submit the entry.

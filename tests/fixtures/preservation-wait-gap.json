@@ -1,0 +1,285 @@
+{
+  "seed": 9475,
+  "actualRank": [
+    0,
+    5,
+    0,
+    6,
+    -12
+  ],
+  "exactRank": [
+    0,
+    5,
+    0,
+    6,
+    -11
+  ],
+  "event": {
+    "schemaVersion": 1,
+    "name": "Generated case 9475",
+    "startMinutes": 600,
+    "requests": [
+      {
+        "id": "r-0",
+        "title": "Item 1",
+        "visitor": "Visitor 1",
+        "skill": "general",
+        "duration": 2,
+        "arrival": 0,
+        "leaveBy": 4,
+        "partsReady": true,
+        "note": ""
+      },
+      {
+        "id": "r-1",
+        "title": "Item 2",
+        "visitor": "Visitor 2",
+        "skill": "electrical",
+        "duration": 2,
+        "arrival": 3,
+        "leaveBy": 9,
+        "partsReady": true,
+        "note": ""
+      },
+      {
+        "id": "r-2",
+        "title": "Item 3",
+        "visitor": "Visitor 3",
+        "skill": "general",
+        "duration": 3,
+        "arrival": 0,
+        "leaveBy": 6,
+        "partsReady": true,
+        "note": ""
+      },
+      {
+        "id": "r-3",
+        "title": "Item 4",
+        "visitor": "Visitor 4",
+        "skill": "electrical",
+        "duration": 3,
+        "arrival": 1,
+        "leaveBy": 9,
+        "partsReady": true,
+        "note": ""
+      },
+      {
+        "id": "r-4",
+        "title": "Item 5",
+        "visitor": "Visitor 5",
+        "skill": "general",
+        "duration": 3,
+        "arrival": 2,
+        "leaveBy": 11,
+        "partsReady": true,
+        "note": ""
+      },
+      {
+        "id": "r-5",
+        "title": "Item 6",
+        "visitor": "Visitor 6",
+        "skill": "electrical",
+        "duration": 2,
+        "arrival": 5,
+        "leaveBy": 11,
+        "partsReady": true,
+        "note": ""
+      },
+      {
+        "id": "r-6",
+        "title": "Item 7",
+        "visitor": "Visitor 7",
+        "skill": "electrical",
+        "duration": 1,
+        "arrival": 1,
+        "leaveBy": 10,
+        "partsReady": true,
+        "note": ""
+      }
+    ],
+    "volunteers": [
+      {
+        "id": "v-0",
+        "name": "Repairer 1",
+        "skills": [
+          "general",
+          "electrical"
+        ],
+        "start": 2,
+        "end": 12,
+        "available": true,
+        "blocks": []
+      },
+      {
+        "id": "v-1",
+        "name": "Repairer 2",
+        "skills": [
+          "general",
+          "electrical"
+        ],
+        "start": 2,
+        "end": 9,
+        "available": true,
+        "blocks": []
+      },
+      {
+        "id": "v-2",
+        "name": "Repairer 3",
+        "skills": [
+          "general"
+        ],
+        "start": 2,
+        "end": 9,
+        "available": true,
+        "blocks": [
+          {
+            "id": "block-2",
+            "label": "Generated break",
+            "kind": "break",
+            "start": 7,
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "assignments": [
+      {
+        "requestId": "r-4",
+        "volunteerId": "v-2",
+        "start": 2,
+        "duration": 3,
+        "locked": false
+      },
+      {
+        "requestId": "r-5",
+        "volunteerId": "v-0",
+        "start": 5,
+        "duration": 2,
+        "locked": false
+      },
+      {
+        "requestId": "r-6",
+        "volunteerId": "v-1",
+        "start": 8,
+        "duration": 1,
+        "locked": false
+      },
+      {
+        "requestId": "r-0",
+        "volunteerId": "v-1",
+        "start": 2,
+        "duration": 2,
+        "locked": false
+      },
+      {
+        "requestId": "r-1",
+        "volunteerId": "v-1",
+        "start": 5,
+        "duration": 2,
+        "locked": false
+      },
+      {
+        "requestId": "r-2",
+        "volunteerId": "v-0",
+        "start": 2,
+        "duration": 3,
+        "locked": false
+      }
+    ]
+  },
+  "scenario": {
+    "objective": "keep-promises",
+    "absentVolunteerId": null,
+    "extraSlots": 1,
+    "readyRequestId": null,
+    "priorityRequestId": null
+  },
+  "proposalAssignments": [
+    {
+      "requestId": "r-6",
+      "volunteerId": "v-0",
+      "start": 2,
+      "duration": 2,
+      "locked": false
+    },
+    {
+      "requestId": "r-2",
+      "volunteerId": "v-1",
+      "start": 2,
+      "duration": 4,
+      "locked": false
+    },
+    {
+      "requestId": "r-4",
+      "volunteerId": "v-2",
+      "start": 2,
+      "duration": 4,
+      "locked": false
+    },
+    {
+      "requestId": "r-3",
+      "volunteerId": "v-0",
+      "start": 4,
+      "duration": 4,
+      "locked": false
+    },
+    {
+      "requestId": "r-1",
+      "volunteerId": "v-1",
+      "start": 6,
+      "duration": 3,
+      "locked": false
+    },
+    {
+      "requestId": "r-5",
+      "volunteerId": "v-0",
+      "start": 8,
+      "duration": 3,
+      "locked": false
+    }
+  ],
+  "oracleAssignments": [
+    {
+      "requestId": "r-2",
+      "volunteerId": "v-2",
+      "start": 2,
+      "duration": 4,
+      "locked": false
+    },
+    {
+      "requestId": "r-5",
+      "volunteerId": "v-1",
+      "start": 6,
+      "duration": 3,
+      "locked": false
+    },
+    {
+      "requestId": "r-1",
+      "volunteerId": "v-0",
+      "start": 4,
+      "duration": 3,
+      "locked": false
+    },
+    {
+      "requestId": "r-3",
+      "volunteerId": "v-1",
+      "start": 2,
+      "duration": 4,
+      "locked": false
+    },
+    {
+      "requestId": "r-4",
+      "volunteerId": "v-0",
+      "start": 7,
+      "duration": 4,
+      "locked": false
+    },
+    {
+      "requestId": "r-6",
+      "volunteerId": "v-0",
+      "start": 2,
+      "duration": 2,
+      "locked": false
+    }
+  ]
+}

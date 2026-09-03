@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "name": "Mixed capacity blockers",
+  "volunteers": [
+    {
+      "id": "v-one",
+      "name": "One repairer",
+      "skills": ["general"],
+      "start": 0,
+      "end": 3,
+      "available": true,
+      "blocks": [
+        {
+          "id": "walk-in",
+          "label": "Walk-in reserve",
+          "kind": "walk-in",
+          "start": 0,
+          "duration": 1
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "r-booked",
+      "title": "Booked item",
+      "visitor": "Guest A",
+      "skill": "general",
+      "duration": 1,
+      "arrival": 1,
+      "leaveBy": 2,
+      "partsReady": true,
+      "note": ""
+    },
+    {
+      "id": "r-target",
+      "title": "Unplaced item",
+      "visitor": "Guest B",
+      "skill": "general",
+      "duration": 2,
+      "arrival": 0,
+      "leaveBy": 3,
+      "partsReady": true,
+      "note": ""
+    }
+  ],
+  "assignments": [
+    {
+      "requestId": "r-booked",
+      "volunteerId": "v-one",
+      "start": 1,
+      "duration": 1,
+      "locked": true
+    }
+  ]
+}
