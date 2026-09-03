@@ -1,6 +1,6 @@
 {
   "createdAt": "2026-09-03T17:55:51.965Z",
-  "published": false,
+  "published": true,
   "exclusions": [
     "Git history",
     "internal checkpoint and agent guidance",
@@ -29,8 +29,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 22868,
-      "sha256": "7aef0da2ab3d5eb409bcbb797867681d3d5580cde74949ebb18298f4840c35de",
+      "bytes": 21269,
+      "sha256": "3b1f866227f6b321fc7ded09346f70010f26f9c18d88004ed1ee94906f4dd166",
       "changedForExport": true
     },
     {
@@ -65,8 +65,8 @@
     },
     {
       "file": "docs/deployment-readiness.md",
-      "bytes": 9378,
-      "sha256": "7f6cf808609383b550b3390c452fe7d773c51d981dc909b6c00f570cd04c0029",
+      "bytes": 9370,
+      "sha256": "bb1ca2357069ebd2876efb26458a771ae303c8ce8207df1efc552ced647dda14",
       "changedForExport": false
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "file": "docs/submission.md",
-      "bytes": 12734,
-      "sha256": "3f9fe007c9c1f787a2241404a3f5721a6da658ae7c956fa58239922696cdd5f8",
+      "bytes": 12350,
+      "sha256": "58e4196764086095a7c27fd1108693a8d751378c418b74cbc3d1f2342bbc63fb",
       "changedForExport": false
     },
     {
@@ -579,5 +579,6 @@
       "sha256": "5d1490e86dcd92a0b1fb945342e558a80318cb7636056214411b69789d60924c",
       "changedForExport": false
     }
-  ]
+  ],
+  "updatedAt": "2026-09-03T23:38:02.372035+00:00"
 }

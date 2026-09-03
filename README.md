@@ -1,8 +1,8 @@
 # Benchkeeper
 
-A local repair-event planning desk for a volunteer organizer and their browser agent. Protect an appointment, explore a cancellation, inspect the changed plan, and decide what to apply.
+Benchkeeper helps organizers schedule community repair events, where people bring broken household items and volunteers help fix them. Match requests to volunteers, protect promised appointments, and review a browser agent's proposed schedule before applying it.
 
-**Try it: [benchkeeper.gpj.workers.dev](https://benchkeeper.gpj.workers.dev).** Deployed to the user’s personal Cloudflare account with explicit authorization. The source repository is private, the video has not been published and the entry has not been submitted.
+**[Try the live app](https://benchkeeper.gpj.workers.dev)** · **[Public source](https://github.com/garethpaul/benchkeeper)** · **[MIT license](LICENSE)**
 
 Manual planning works in ordinary browsers. Real browser-native WebMCP is verified on the hosted origin in Chrome 152 with WebMCP enabled; it is not generally available in unflagged browsers. See [deployment and live verification](docs/deployment-readiness.md).
 
@@ -25,19 +25,11 @@ npm ci --cache work/npm-cache
 npm run dev
 ```
 
-npm 11.19 reported pending install-script approvals for `esbuild` and `workerd`; the Linux checks passed without changing those approvals. If another platform reports an install-script problem, review the named package and npm’s per-package controls rather than enabling all scripts blindly. [npm install-script controls](https://docs.npmjs.com/cli/v11/commands/npm-install-scripts/)
+npm 11.19 reported pending install-script approvals for `esbuild` and `workerd`; the Linux checks passed without changing those approvals. If another platform reports an install-script problem, review the named package and npm’s per-package controls rather than enabling all scripts blindly. [npm install-script controls](https://docs.npmjs.com/cli/v11/commands/npm%2Dinstall%2Dscripts/)
 
 Open [the local app](http://127.0.0.1:5173/) **on the machine running it**. The development server binds to loopback only; the same address on another computer does not reach this server.
 
-**Local SSH forwarding remains blocked; use the hosted link above for access.** The previous local-only diagnosis: the attempted SSH route rejects forwarded connections, while the server-local app is healthy. No alternative tunnel or access-control change has been made.
-
-For another computer, the following is a **conditional recipe, not verified access in the current user environment**. It requires an existing SSH connection and a server policy that permits forwarding:
-
-```sh
-ssh -N -o ExitOnForwardFailure=yes -L 127.0.0.1:5173:127.0.0.1:5173 SSH_HOST
-```
-
-Only after the forward actually connects, open [localhost through the SSH forward](http://127.0.0.1:5173/). The first address explicitly restricts the forwarding listener to your own loopback. `ExitOnForwardFailure` makes SSH exit if it cannot bind that port, instead of leaving an unusable forwarding session running. Do not use `-g`, `0.0.0.0`, a public tunnel, or expose the server to the internet. This instruction is for your own configured `SSH_HOST` alias; it does not grant anyone else access. A successfully bound local listener does not prove that the server permits forwarded connections. If SSH reports `administratively prohibited`, stop: an authorized administrator or the user must arrange an approved access path. Do not bypass SSH or network controls.
+For remote access, use the hosted app above. The local development server is intentionally restricted to localhost.
 
 ## Try the story
 
@@ -135,7 +127,7 @@ env PLAYWRIGHT_BROWSERS_PATH="$PWD/work/browsers" npx playwright install chromiu
 env PLAYWRIGHT_BROWSERS_PATH="$PWD/work/browsers" npm run test:e2e
 ```
 
-Tests default to Playwright's pinned browser. Set `CHROME_EXECUTABLE=/absolute/path/to/chrome` to test a different installed Chrome without editing source. Record its actual version when comparing evidence. Chrome tests keep native scrollbars visible so layout checks include real scrollbar gutters. Native tests require real WebMCP and fail if it is missing; they never install a mock. Four binding-lifecycle cases use an intercepted fixture document with the real hook and development React StrictMode; they do not represent the full product UI. Linux needs the browser's shared-library prerequisites. This project's dev-host evidence used an isolated userspace library directory; it did not install system packages.
+Tests default to Playwright's pinned browser. Set `CHROME_EXECUTABLE` to your Chrome executable path to test a different installed Chrome without editing source. Record its actual version when comparing evidence. Chrome tests keep native scrollbars visible so layout checks include real scrollbar gutters. Native tests require real WebMCP and fail if it is missing; they never install a mock. Four binding-lifecycle cases use an intercepted fixture document with the real hook and development React StrictMode; they do not represent the full product UI. Linux needs the browser's shared-library prerequisites. This project's dev-host evidence used an isolated userspace library directory; it did not install system packages.
 
 Optional manual-only Firefox checks (verified with Playwright Firefox 153.0):
 
@@ -158,7 +150,7 @@ For a local production-runtime check (no Cloudflare account required):
 env XDG_CONFIG_HOME="$PWD/work/wrangler-home" WRANGLER_SEND_METRICS=false WRANGLER_LOG_PATH="$PWD/work/evidence/wrangler-runtime.log" npm run runtime
 ```
 
-Open [the local workerd app](http://127.0.0.1:8787/) on its host. Subject to the forwarding restriction above, the conditional command is `ssh -N -o ExitOnForwardFailure=yes -L 127.0.0.1:8787:127.0.0.1:8787 SSH_HOST`. The `/api/health` endpoint reports the local storage model. Worker responses set CSP, origin isolation, tools Permissions Policy, nosniff and referrer restrictions.
+Open [the local workerd app](http://127.0.0.1:8787/) on its host. The `/api/health` endpoint reports the local storage model. Worker responses set CSP, origin isolation, tools Permissions Policy, nosniff and referrer restrictions.
 
 In another terminal:
 
@@ -186,16 +178,18 @@ For a frozen verification run, set `BENCHKEEPER_TEST_EVIDENCE_DIR` to its `brows
 
 The selected two-minute draft records 14 real native calls chosen by a developer-guided language model, with separately automated organizer clicks, synthetic eSpeak narration and engine-timed captions. The disclosure stays legible during dialogs. A no-caption master and SRT are retained. This familiar development case is **not an independent or autonomous-agent evaluation** and has not been published. The fixed-script alternative remains separately labeled. Python/eSpeak/FFmpeg are optional media tools, not app runtime dependencies. See [demo production and review](docs/demo.md) for reproduction and remaining listening review.
 
-## Deployment and remaining publishing
+## Deployment and source
 
-Source is maintained in the private [garethpaul/benchkeeper repository](https://github.com/garethpaul/benchkeeper). It began with a clean source snapshot and fresh Git history; private development records are not included. Private visibility does not fulfill the challenge’s public-repository requirement.
+The live app is hosted on Cloudflare Workers. This public repository contains the application source, tests, dependency lockfile, setup instructions and MIT license. It matches the workshop-ledger application shown in the demo; local design experiments and recording assets are not part of the source release.
 
-The app is live on the user’s personal Cloudflare account. The [release handoff](docs/deployment-readiness.md) records the exact version, privacy gate and live-origin checks. Local configuration remains loopback-only; the authorized release uses a separate pinned configuration. Source-repository and video publication, registration and submission remain separate user-controlled steps.
+See the [deployment notes](docs/deployment-readiness.md) for the recorded acceptance checks. Those notes retain dated release history. Local development and runtime commands bind only to localhost; the default bundle check is a dry run.
+
+Publishing this repository does not upload a video or submit the project to the competition.
 
 ## Project map
 
 | File                                                                     | Responsibility                                                          |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| --- | --- |
 | `src/domain.ts`                                                          | Validation and scheduling invariants                                    |
 | `src/scheduler.ts`                                                       | Bounded deterministic planning, exclusions, metrics                     |
 | `src/store.ts`                                                           | Shared state, revisions, approval, undo/redo, import/export, history    |

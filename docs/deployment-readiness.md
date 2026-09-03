@@ -1,6 +1,8 @@
 # Cloudflare deployment and release handoff
 
-**Live: [benchkeeper.gpj.workers.dev](https://benchkeeper.gpj.workers.dev).** The user explicitly authorized this deployment to their personal Cloudflare account. Hosting is complete and the source repository is private. Public repository/video publication, registration and submission remain separate user-controlled steps.
+**Live: [Benchkeeper](https://benchkeeper.gpj.workers.dev).** **Public source: [garethpaul/benchkeeper](https://github.com/garethpaul/benchkeeper).**
+
+The sections below are historical deployment records from September 3, 2026. References to private source visibility describe the state at those earlier checkpoints. The source is now public; video publication and competition submission remain separate steps.
 
 ## Initial deployed release
 
@@ -49,7 +51,7 @@ Keep `assets.run_worker_first: true`: the Worker supplies the response security 
 
 Before any future publication, rebuild and rerun the private privacy gate on the exact artifacts. For repository publication, use the allowlisted source exporter, audit the new archive, and create a clean repository only after authorization. Do not publish the original development Git history. Source exports remain local and do not include the private release configuration.
 
-The current naming update can be rolled back to the initial version listed above. Preserve both known-good versions and their asset manifests. Any later rollback, replacement or disabling of the public route must stay within the user’s authorization; do not affect unrelated resources. [Wrangler Worker commands](https://developers.cloudflare.com/workers/wrangler/commands/workers/) · [workers.dev routing](https://developers.cloudflare.com/workers/configuration/routing/workers-dev/)
+The current naming update can be rolled back to the initial version listed above. Preserve both known-good versions and their asset manifests. Any later rollback, replacement or disabling of the public route must stay within the user’s authorization; do not affect unrelated resources. [Wrangler Worker commands](https://developers.cloudflare.com/workers/wrangler/commands/workers/)
 
 Keep the submitted hosted build, source revision and video aligned through judging. Hosting alone does not register or submit the entry.
 
@@ -65,4 +67,4 @@ Cloudflare version `70ce3422-a1d3-4f8a-901f-fdcc547be555` serves the refreshed d
 
 The frozen local run passed 110 unit tests, 70 Chrome cases, 18 Firefox cases and 18 Linux WebKit cases, plus runtime, asset-identity and dry-run checks. All seven inspected live visual states passed automated accessibility checks, including narrow 320/390-pixel layouts, proposals, approval, roster and tools. The first live asset request briefly returned the prior favicon; a subsequent ordinary request returned the new bytes. No cache or infrastructure setting was changed. Repository screenshots now show the hosted design. The local demo movie is still the earlier design and must be refreshed before publication.
 
-The completed live acceptance run also passed six HTTP/security-header cases, exact hashes for all 21 assets, ordinary manual mode and real native-enabled Chrome read/preview/review/apply/reload/backup/reset flows. All ten tools are registered. No origin-trial token or polyfill was added. The repository remains private.
+The completed live acceptance run also passed six HTTP/security-header cases, exact hashes for all 21 assets, ordinary manual mode and real native-enabled Chrome read, preview, review, apply, reload, backup and reset flows. All ten tools are registered. No origin-trial token or polyfill was added. The repository remains private.

@@ -8,7 +8,7 @@
 
 Help repair-event volunteers recover from cancellations, protect promised appointments, and review an agent's revised plan before the organizer applies it.
 
-**155 characters**, machine-checked in `work/evidence/pitch-count.json`; strictly less than 200.
+**155 characters**, machine-checked in the pitch-length check; strictly less than 200.
 
 ## About the Project
 
@@ -16,7 +16,7 @@ Help repair-event volunteers recover from cancellations, protect promised appoin
 
 A volunteer cancels. Several visitors are already expecting a time. Another item needs a missing part. An organizer must work out what can still fit without quietly breaking promises.
 
-Repair Café's 2026 survey reports volunteer shortages and too many incoming items among organizers' concerns. That supports the problem, not a claim that this product has been adopted or tested with organizers. [Repair Café survey](https://www.repaircafe.org/en/repair-cafes-attract-1-5-million-visitors-every-year/)
+Repair Café's 2026 survey reports volunteer shortages and too many incoming items among organizers' concerns. That supports the problem, not a claim that this product has been adopted or tested with organizers. [Repair Café survey](https://www.repaircafe.org/en/repair%2Dcafes%2Dattract%2D1%2D5%2Dmillion%2Dvisitors%2Devery%2Dyear/)
 
 ### What it does
 
@@ -51,7 +51,7 @@ React; TypeScript; Vite; Zod; csv-parse; Lucide React; IBM Plex Sans; DM Serif D
 Times are rounded from the selected recording; the storyboard retains nominal pacing for future takes.
 
 | Time      | Screen and action                                | Narration                                                                                                                                                                                                                                                                     |
-| --------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --- | --- | --- |
 | 0:00–0:14 | One promise we will not move                     | A volunteer cancels, but a visitor's promised slot must stay. This synthetic example lets an organizer and browser agent inspect the consequences before applying a new plan.                                                                                                 |
 | 0:14–0:36 | Real native WebMCP · developer-guided agent      | The agent reads the roster and queue, then previews Sam's cancellation through real browser native Web M C P tools. A developer guided language model chose these calls. The organizer clicks are automated and the voice is synthetic. This is not an independent benchmark. |
 | 0:36–0:52 | Current and proposed plans stay separate         | The first preview keeps the lamp fixed. It fits ten appointments, but the fan loses its slot. The current nine appointments are still untouched. The complete change report makes the difference visible.                                                                     |
@@ -78,10 +78,10 @@ Start with README instructions. Local Vite URL: `http://127.0.0.1:5173/`. Local 
 - [x] Provide an authorized hosted access path. Local SSH forwarding remains blocked and was not changed.
 - [x] Complete local acceptance and record achieved rubric evidence and gaps. User review of the final submission remains outstanding.
 - [x] **Authorized and completed:** deploy to the personal Cloudflare account and verify the real hosted URL, manual flows and native WebMCP in enabled Chrome. No origin-trial enrollment was performed; unflagged Chrome remains manual.
-- [ ] **Later, only with authorization:** publish a repository with its open-source license, source, setup instructions and dependency notices. Private inspiration, caches and local evidence with sensitive paths must not be published.
+- [x] Publish the [public source repository](https://github.com/garethpaul/benchkeeper) with its MIT license, source, setup instructions and dependency notices. Development notes, recordings and caches are excluded.
 - [ ] **User-controlled:** review or replace the local narrated draft, then publish the final YouTube demo under three minutes. Do not present screenshots alone as a functioning demo.
 - [ ] Enter the name, checked pitch, About text, actual Built With list, hosted URL, public source URL, video URL and testing instructions in Devpost. Include all team members accurately.
 - [ ] Review and submit before **September 3, 2026, 13:00 Pacific / 20:00 UTC**. This phase does not submit anything.
 - [ ] Keep judge access free and usable through September 21 at 17:00 Pacific; freeze the submitted artifacts after the deadline as directed by the [resources FAQ](https://webmcp.devpost.com/resources). Continue development in a separate copy if needed.
 
-The hosted URL above is live. Source is in the private [garethpaul/benchkeeper repository](https://github.com/garethpaul/benchkeeper); this does not meet the required public-repository availability. Public source visibility and video publication, registration and submission remain outstanding.
+The hosted URL above is live, and the [source repository](https://github.com/garethpaul/benchkeeper) is public. This document remains a submission draft; publishing source does not publish a video, register an entrant or submit the project.
