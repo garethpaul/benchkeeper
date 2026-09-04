@@ -23,7 +23,7 @@ export default defineConfig({
   projects: [
     {
       name: 'native-chrome',
-      testIgnore: '**/fallback.spec.ts',
+      testIgnore: ['**/fallback.spec.ts', '**/chrome-settings.spec.ts'],
       use: {
         launchOptions: {
           executablePath,
@@ -33,6 +33,13 @@ export default defineConfig({
           args: ['--enable-blink-features=WebMCP', '--enable-features=WebMCPTesting']
         }
       }
+    },
+    {
+      // Full Chrome has chrome://flags; Headless Shell does not. This project
+      // tests the documented user setting without WebMCP launch arguments.
+      name: 'chrome-settings',
+      testMatch: '**/chrome-settings.spec.ts',
+      use: { channel: 'chromium', launchOptions: { executablePath } }
     },
     {
       name: 'unsupported-chrome',

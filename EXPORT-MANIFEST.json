@@ -29,8 +29,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 21269,
-      "sha256": "3b1f866227f6b321fc7ded09346f70010f26f9c18d88004ed1ee94906f4dd166",
+      "bytes": 23792,
+      "sha256": "0af4c790b23d376f0c958aa8df19bbc7bb6eefd18c50c893e81751058fbfb9a7",
       "changedForExport": true
     },
     {
@@ -125,14 +125,14 @@
     },
     {
       "file": "package.json",
-      "bytes": 1311,
-      "sha256": "0aa908f7b27475f1a726d96332210dcf966652cfe37011a39c0123be63a5f59e",
+      "bytes": 1374,
+      "sha256": "1e0d9b63a9a4798ea8290e65b519019b35312f9fe5f5f4a17c7195ee733e8830",
       "changedForExport": false
     },
     {
       "file": "playwright.config.ts",
-      "bytes": 1973,
-      "sha256": "f89cbcfb9c062d8d7bc666b2abb552f8163eeeb6ff03855a4083bc296cdea5ea",
+      "bytes": 2321,
+      "sha256": "4ded20f6c7d88d0318e634e6afc73d97789333e5d9e5cd7c4f779c3f35c039b3",
       "changedForExport": false
     },
     {
@@ -578,7 +578,13 @@
       "bytes": 31343,
       "sha256": "5d1490e86dcd92a0b1fb945342e558a80318cb7636056214411b69789d60924c",
       "changedForExport": false
+    },
+    {
+      "file": "tests/e2e/chrome-settings.spec.ts",
+      "changedForExport": false,
+      "bytes": 8710,
+      "sha256": "1ea9c9285934626fa80c7d11865fc6f40e3b3805a7f53a4a2c12f23805b6f6b6"
     }
   ],
-  "updatedAt": "2026-09-03T23:38:02.372035+00:00"
+  "updatedAt": "2026-09-04T00:28:46.272492+00:00"
 }

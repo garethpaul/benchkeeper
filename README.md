@@ -54,6 +54,25 @@ Choose **Paste intake** above the queue. Use the documented header, paste CSV or
 
 ## WebMCP
 
+### Chrome check for judges
+
+1. In Chrome, open `chrome://flags/#enable-webmcp-testing`, select **Enabled**, and fully relaunch Chrome. The hosted app does not currently enable WebMCP in an ordinary unflagged profile. [Chrome's setup instructions](https://developer.chrome.com/docs/ai/webmcp#local-webmcp).
+2. Open [Benchkeeper directly in a tab](https://benchkeeper.gpj.workers.dev), not inside an embedded preview. Confirm **10 agent tools ready**. If it says **Manual mode · WebMCP unavailable**, native WebMCP is not active; a working manual preview does not prove otherwise.
+3. On the untouched example, choose **Agent tools → Run scripted rehearsal**. If you already edited the event, download a backup before resetting the example. A proposal should open without changing the current plan. Return to **Agent tools**: all three results must say **Native document.modelContext call**. This checks native execution with a fixed script, not an AI model.
+4. For natural-language testing, use Chrome's [Model Context Tool Inspector](https://developer.chrome.com/docs/ai/webmcp) and the suggested prompt below. Its model/key setup is separate; the app does not contain a chatbot. An external agent's behavior is not guaranteed by the scripted check.
+
+Run the repeatable hosted setup test with full Chrome/Chromium installed:
+
+```sh
+env TEST_BASE_URL=https://benchkeeper.gpj.workers.dev npm run test:judge
+```
+
+Set `CHROME_EXECUTABLE` to the absolute path of your Chrome executable; otherwise this uses Playwright's full pinned Chromium, not Headless Shell. `npx playwright install chromium` installs it. Omit `TEST_BASE_URL` to test the local app. Add `-- --headed` for a visible browser on a host with a display.
+
+The test creates an isolated profile, checks Default, changes the real Chrome setting to Enabled, closes/reopens Chrome, discovers native schemas and tools, rejects invalid input, previews Sam's absence, reads every change-report page and opens the shared review. It asserts that native previews leave the saved event unchanged, UI confirmation is required, the protected appointment survives approval/reload, and restoring Default returns to clearly labelled non-native rehearsal. Browser versions, native results, screenshots and failure traces are retained in the Playwright report. It never changes your personal Chrome profile. It uses controlled browser restarts, not the Relaunch button; browser automation is not a test of the inspector's model conversation.
+
+### Compatibility and tool contract
+
 Chrome for Testing 152.0.7977.75, Canary 155.0.8039.0 and Playwright's pinned Chrome Headless Shell 151.0.7922.34 passed native workflows locally with `--enable-blink-features=WebMCP --enable-features=WebMCPTesting`. Chrome documents `chrome://flags/#enable-webmcp-testing` for manual local testing, followed by a relaunch. The automated configurations above are verified; they are not a promise of support in every Chrome build. Check **Agent tools** for the actual registration status. [Chrome local-testing instructions](https://developer.chrome.com/docs/ai/webmcp#local-webmcp) In an isolated Chrome 152 profile, selecting that setting and fully restarting also enabled actual native reads and previews; restoring Default removed the API. That check used controlled browser close/reopen, not Chrome’s Relaunch button or the user’s profile.
 
 The app registers ten imperative tools on `document.modelContext`. The tested Chrome 152/155 releases execute with JSON-string arguments; the September 2 draft specifies objects. The built-in rehearsal detects the execution shape using a read-only probe. It never retries a mutation. The older `navigator.modelContext` adapter was separately checked on Chrome 146.0.7680.165 for native read/review and registration failure/lifecycle recovery. That is limited historical coverage, not a recommendation to use an outdated browser. No polyfill is installed.
